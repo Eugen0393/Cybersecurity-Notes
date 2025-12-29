@@ -39,6 +39,6 @@ In a ring topology, devices such as computers are connected directly to each oth
 
 ![ring-topology](../../images/ring-topology.png)  
 
-However, if any device (computer) is damaged, or if the wire connecting all these devices is damaged, data transmission will stop instantly.
+However, if any device (computer) is damaged, or the wire connecting all these devices is damaged, data transmission will instantly stop, as shown in the photo below:
 
 ![ring-topology1](../../images/ring-topology1.png)
