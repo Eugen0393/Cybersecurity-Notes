@@ -1,4 +1,4 @@
-# Module: What is Networking?
+# Section: What is Networking?
 **Path:** Pre-Security  
 **Date:** December 29, 2025  
 **Platform:** TryHackMe
