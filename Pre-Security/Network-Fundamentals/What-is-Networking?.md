@@ -31,7 +31,7 @@ I learned how to use the **Ping** command to test connectivity between devices.
 * **Protocol:** Ping uses **ICMP** (Internet Control Message Protocol) packets.
 * **Usage:** By running `ping <IP_Address>`, we can measure the performance (response time) and reliability of a connection.
 * **Example:** Successfully pinged `8.8.8.8` to confirm Internet connectivity and retrieved a lab flag.
-![Ping Result](../Images/ping_success.png)
+![Ping Result](../../ping_success.png)
 
 ## Conclusion
 Understanding the difference between logical addresses (IP) and physical addresses (MAC), as well as basic diagnostic tools like Ping, provides the essential foundation for network security analysis.
