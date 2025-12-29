@@ -25,6 +25,7 @@ An IP address is a set of numbers used to identify a host for a period of time.
 Unlike IP addresses, a MAC address is a unique 12-character hexadecimal number hardcoded into the device's network interface at the factory.
 * **Format:** It is split into the Vendor ID (first 6 characters) and a unique device identifier (last 6 characters).
 * **Spoofing:** MAC addresses can be "spoofed," allowing a device to pretend to be another for unauthorized access.
+![MAC-address](../../images/MAC-address1.png) ![MAC-address](../../images/MAC-address2.png)
 
 ## 4. Practical Tool: Ping (ICMP)
 I learned how to use the **Ping** command to test connectivity between devices.
