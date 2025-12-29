@@ -6,10 +6,10 @@
 ## 1. Introducing LAN Topologies  
 There are different network architectures, and when we refer to the term "topology," we mean the visual layout of the network in question. Below, we will discuss the advantages and disadvantages of these topologies.
 
-* # **Star Topology:**
+# **Star Topology:**
 
 The basic principle of a star topology is that devices are connected to each other through a central network device, such as a switch or hub.
-![star-topology](../../images/star-topology.png)
+![star-topology](../../images/star-topology.png)  
 In this topology, data is sent through a central device to which all other devices are connected. Below, we will consider some of the advantages and disadvantages of this topology:
 ### Star Topology: Pros and Cons
 
@@ -20,7 +20,7 @@ In this topology, data is sent through a central device to which all other devic
 
 
 
-* # **Bus Topology:**
+# **Bus Topology:**
 
 This type of connection is based on a single connection known as a `trunk cable`.
 ![bus-topology](../../images/bus_topology.png)
@@ -34,7 +34,5 @@ However, despite this, bus topologies are among the simplest and most cost-effec
 | **Cost:** Most cost-effective as it requires minimal cabling. | **Performance:** Significant bottlenecks as the number of devices increases. |
 | **No Hubs/Switches:** Doesn't require expensive central network hardware. | **Security:** Every device sees all the data packets traveling on the backbone (privacy risk). |
 
-## Conclusion  
-The **Bus** topology is now considered outdated and is rarely used in modern offices precisely because of its fragility and security problems. It's a good example of how networks started, but today everyone has switched to the **Star** topology because of its **fault tolerance**.
-
-* ## **Ring Topology:** 
+# **Ring Topology:**  
+In a ring topology, devices such as computers are connected directly to each other, forming a closed loop, which requires fewer wires and less reliance on specialized equipment compared to a star topology.
