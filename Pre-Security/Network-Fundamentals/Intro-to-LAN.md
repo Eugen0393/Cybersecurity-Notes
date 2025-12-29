@@ -35,4 +35,10 @@ However, despite this, bus topologies are among the simplest and most cost-effec
 | **No Hubs/Switches:** Doesn't require expensive central network hardware. | **Security:** Every device sees all the data packets traveling on the backbone (privacy risk). |
 
 # **Ring Topology:**  
-In a ring topology, devices such as computers are connected directly to each other, forming a closed loop, which requires fewer wires and less reliance on specialized equipment compared to a star topology.
+In a ring topology, devices such as computers are connected directly to each other, forming a closed loop, which requires fewer wires and less reliance on specialized equipment compared to a star topology.  
+
+![ring-topology](../../images/ring-topology.png)  
+
+However, if any device (computer) is damaged, or if the wire connecting all these devices is damaged, data transmission will stop instantly.
+
+![ring-topology1](../../images/ring-topology1.png)
