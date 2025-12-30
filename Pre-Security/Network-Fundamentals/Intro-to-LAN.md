@@ -42,3 +42,6 @@ In a ring topology, devices such as computers are connected directly to each oth
 However, if any device (computer) is damaged, or the wire connecting all these devices is damaged, data transmission will instantly stop, as shown in the photo below:
 
 ![ring-topology1](../../images/ring-topology1.png)
+
+# **Conclusion:**
+Ultimately, we know that while bus and ring topologies are both cheaper and simpler options, a star topology is more reliable, although it may be more expensive. The star topology wins due to its scalability and ease of troubleshooting. A star topology has a single point of failure—a central switch that, if it fails, will prevent all data transmission until it is repaired or replaced. From a security standpoint, protecting this central node is critical to maintaining the network's Availability.
