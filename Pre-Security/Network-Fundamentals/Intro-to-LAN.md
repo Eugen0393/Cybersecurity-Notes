@@ -63,3 +63,12 @@ ARP is the protocol used to map an IP address to a physical MAC address.
 * **Function:** It acts like a "translator," converting logical addresses (IP) used by software into physical addresses (MAC) used by hardware.
 * **Process:** The device sends a **Broadcast Request** ("Who has this IP?") to everyone, and only the specific device sends a **Unicast Reply** ("I do, here is my MAC").
 * **Security Risk:** ARP lacks verification, making it vulnerable to **ARP Spoofing**, where an attacker lies about their MAC address to intercept traffic.
+
+## 4. DHCP (Dynamic Host Configuration Protocol)
+DHCP is the protocol that automatically assigns IP addresses to devices when they connect to a network.
+
+![DHCP Process](../../images/dhcp_dora.png)
+
+* **Purpose:** It eliminates the need to manually configure every device, preventing errors like IP conflicts.
+* **Process (DORA):** The connection follows four steps: **D**iscover (Client searches), **O**ffer (Server offers IP), **R**equest (Client accepts), **A**cknowledge (Server confirms).
+* **Security Note:** An attacker can perform **DHCP Starvation** (using up all IPs) or **DHCP Spoofing** (pretending to be the server) to disrupt the network.
