@@ -27,3 +27,17 @@ Because TCP is reliable, it must "introduce" the devices before sending data.
 * **SYN:** The client sends a request to synchronize ("Hello, can we talk?").
 * **SYN/ACK:** The server acknowledges and agrees ("Yes, I am ready").
 * **ACK:** The client confirms the connection ("Okay, sending data now").
+
+## 4. Ports 101
+Because port numbers can range from 0 to 65535, it's easy to lose track of which application is using which port. Fortunately, we associate applications, software, and behavior with a set of standard rules. For example, by ensuring that web browser data is transmitted over port 80, software developers can create web browsers like Google Chrome or Firefox that interpret the data identically.  
+
+Any port in the range from 0 to 1024 is known as a normal port. Below are some examples:
+
+| Protocol | Port | Description |
+| :--- | :---: | :--- |
+| **FTP** (File Transfer Protocol) | 21 | Used for file sharing between computers. Allows you to upload or download files. |
+| **SSH** (Secure Shell) | 22 | Used to securely log in to systems remotely via a command line (text-based interface). |
+| **HTTP** (HyperText Transfer Protocol) | 80 | The standard protocol for the Web. Used by browsers to load pages, images, and videos (Unsecured). |
+| **HTTPS** (HTTP Secure) | 443 | The secure version of HTTP. Does the exact same thing as port 80 but uses **encryption** to protect data. |
+| **SMB** (Server Message Block) | 445 | Used for sharing files and printers on a local network (Very common in Windows). |
+| **RDP** (Remote Desktop Protocol) | 3389 | Allows you to connect to a remote computer and use its graphical desktop (GUI), unlike SSH which is text-only. |
