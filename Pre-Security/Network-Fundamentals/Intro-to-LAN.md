@@ -45,3 +45,21 @@ However, if any device (computer) is damaged, or the wire connecting all these d
 
 # **Conclusion:**
 Ultimately, we know that while bus and ring topologies are both cheaper and simpler options, a star topology is more reliable, although it may be more expensive. The star topology wins due to its scalability and ease of troubleshooting. A star topology has a single point of failure—a central switch that, if it fails, will prevent all data transmission until it is repaired or replaced. From a security standpoint, protecting this central node is critical to maintaining the network's Availability.
+
+## 2. A Primer on Subnetting
+Subnetting is the process of splitting a large network into smaller, manageable mini-networks.
+
+![Subnetting Diagram](../../images/subnetting_departments.png)
+
+* **Concept:** It works like slicing a cake — dividing a single network connection into smaller parts for different departments (e.g., Accounting, HR).
+* **Technical:** A **Subnet Mask** (32-bit number) is used to identify which part of the IP address belongs to the network and which part belongs to the specific device (Host).
+* **Benefit:** This segmentation improves **Security** and **Efficiency** because traffic is contained within specific departments instead of broadcasting to everyone.
+
+## 3. ARP (Address Resolution Protocol)
+ARP is the protocol used to map an IP address to a physical MAC address.
+
+![ARP Process](../../images/arp_diagram.png)
+
+* **Function:** It acts like a "translator," converting logical addresses (IP) used by software into physical addresses (MAC) used by hardware.
+* **Process:** The device sends a **Broadcast Request** ("Who has this IP?") to everyone, and only the specific device sends a **Unicast Reply** ("I do, here is my MAC").
+* **Security Risk:** ARP lacks verification, making it vulnerable to **ARP Spoofing**, where an attacker lies about their MAC address to intercept traffic.
