@@ -17,7 +17,7 @@ With this configuration, Network #2 will now be able to access the web server ru
 
 ## 2. Firewalls 101
 
-A firewall is a network device responsible for determining which traffic is allowed in and out. An administrator can configure a firewall to allow or deny traffic in and out of the network based on a variety of factors, such as:
+A firewall is a network device responsible for determining which traffic is allowed in and out.</mark> An administrator can configure a firewall to allow or deny traffic in and out of the network based on a variety of factors, such as:
 
 * **Where the traffic is coming from?** (has the firewall been told to accept/deny traffic from a specific network?)
 * **Where is the traffic going to?** (has the firewall been told to accept/deny traffic destined for a specific network?)
