@@ -34,3 +34,35 @@ These records point to the addresses of the servers handling email for the domai
 
 ## $\color{red}{\textsf{TXT}}$ Record  
 TXT records are text fields that can store any text data. TXT records have many uses, but the most common is listing servers authorized to send emails on behalf of a domain (this can help combat spam and spoofed emails).
+
+# What happens when you make a DNS request  
+<img width="675" height="553" alt="image" src="https://github.com/user-attachments/assets/a0259bcd-46d5-48fd-8eca-47d4181aa935" />
+
+### 🔄 DNS Resolution Process
+
+1.  **Local Cache**
+    Your computer first checks its own memory. If you visited the site recently, the IP address is saved here.
+
+2.  **Recursive DNS Server**
+    Usually provided by your ISP. It checks its own cache. If the IP is not found, it starts the search by contacting the Root Server.
+
+3.  **Root Server**
+    The backbone of DNS. It doesn't know the specific IP but redirects the request to the correct **TLD Server** (based on the extension like `.com` or `.org`).
+
+4.  **TLD Server (Top-Level Domain)**
+    It points to the **Authoritative Name Server** responsible for that specific domain (e.g., `tryhackme.com`).
+
+5.  **Authoritative Server**
+    The "Final Boss". It holds the actual DNS records (IP address).
+    * It sends the IP back to the Recursive Server.
+    * The result is cached for a specific time (**TTL** - Time To Live) to speed up future requests.
+
+```mermaid
+graph TD
+    User[Your Computer] -->|1. Check Cache| LocalCache
+    LocalCache -->|2. If missing| Recursive[ISP Recursive Server]
+    Recursive -->|3. Ask| Root[Root Server]
+    Root -->|4. Redirect to .com| TLD[TLD Server .com]
+    TLD -->|5. Redirect to Nameserver| Auth[Authoritative Server]
+    Auth -->|6. Return IP Address| Recursive
+    Recursive -->|7. Save TTL & Return IP| User
