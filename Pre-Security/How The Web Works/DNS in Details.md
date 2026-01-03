@@ -29,8 +29,11 @@ These records correspond to IPv4 addresses, such as 104.26.10.229.
 ## $\color{red}{\textsf{AAAA}}$ Record  
 These records are translated into IPv6 addresses, for example, 2606:4700:20::681a:be5
 
-## $\color{red}{\textsf{CNAME}}$ Record  
-These records point to the addresses of the servers handling email for the domain you're accessing. For example, the MX record response for tryhackme.com would look something like `alt1.aspmx.l.google.com` . These records also contain a priority flag. This tells the client the order in which to attempt to contact the servers, which is ideal if the primary server goes down and email needs to be sent to a backup server.
+## $\color{red}{\textsf{CNAME}}$ Record
+These records resolve to another domain name, effectively acting as an alias. For example, `store.tryhackme.com` points to `shops.shopify.com`.
+
+## $\color{red}{\textsf{MX}}$ Record
+These records resolve to the address of the servers handling email for the domain you are querying. For example, the MX record for `tryhackme.com` is `alt1.aspmx.l.google.com`.
 
 ## $\color{red}{\textsf{TXT}}$ Record  
 TXT records are text fields that can store any text data. TXT records have many uses, but the most common is listing servers authorized to send emails on behalf of a domain (this can help combat spam and spoofed emails).
