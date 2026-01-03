@@ -10,8 +10,8 @@ The **D**omain **N**ame **S**ystem provides a simple way to connect to devices o
 
 ## TLD (**T**op-**L**evel **D**omain) 
 This is the rightmost part of the domain name. For example, the top-level domain of google.com is .com. There are two types of top-level domains: $\color{red}{\textsf{gTLDs (Generic Top Level)}}$ and $\color{red}{\textsf{ccTLDs (Country Code Top Domain)}}$. Historically, $\color{red}
-{\textsf{gTLDs}}$ were used to indicate to the user the purpose of the domain name; $\color{red}{\textsf{for example, .com was used for commercial purposes, .org for organizations, .edu for education, and .gov for government}}$. And $\color{red}{\textsf{ccTLDs}}$ were used for
-geographic purposes, $\color{red}{\textsf{for example, .ca for sites located in Canada, .co.uk for sites located in the United Kingdom}}$, and so on. Because of this demand, there has been an influx of new gTLDs, ranging from .online, .club, .website, .biz, and many others.
+{\textsf{gTLDs}}$ were used to indicate to the user the purpose of the domain name; $\color{red}{\textsf{for example, .com was used for commercial purposes, `.org` for organizations, .edu for education, and `.gov` for government}}$. And $\color{red}{\textsf{ccTLDs}}$ were used for
+geographic purposes, $\color{red}{\textsf{for example, `.ca` for sites located in Canada, `.co.uk` for sites located in the United Kingdom}}$, and so on. Because of this demand, there has been an influx of new gTLDs, ranging from `.online, .club, .website, .biz`, and many others.
 
 
 ## Second-Level Domain  
