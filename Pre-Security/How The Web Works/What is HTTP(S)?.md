@@ -93,3 +93,15 @@ To breakdown each line of the response:
 **Line 6:** HTTP response contains a blank line to confirm the end of the HTTP response.
 
 **Lines 7-14:** The information that has been requested, in this instance the homepage.
+
+# 2. HTTP Methods  
+
+HTTP methods are the way a client can specify the desired action when sending an HTTP request. Only the GET and POST methods are commonly used.
+
+**GET request** - This is used to retrieve information from a web server. $\color{red}{\textsf{(to get info from web-server)}}$
+
+**POST request** - This is used to send data to a web server and potentially create new records. $\color{red}{\textsf{(to send info to web-server)}}$
+
+**PUT request** - This is used to send data to a web server to update information. $\color{red}{\textsf{(to update info on web-server)}}$
+
+**DELETE request** - This function is used to delete information/records from a web server. $\color{red}{\textsf{(to delete info from web-server)}}$
