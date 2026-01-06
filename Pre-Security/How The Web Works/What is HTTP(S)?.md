@@ -154,3 +154,10 @@ These are headers that are sent from the client (usually your browser) to the se
 | Cache-Control | How long will the response content be stored in the browser's cache before it requests it again? |
 | Content-Type | This parameter tells the client what type of data is being returned, such as HTML, CSS, JavaScript, image, PDF, video, etc. Using the Content-Type header, the browser knows how to process the data. | 
 | Content-Encoding | What method was used to compress the data in order to reduce its size when transmitting it over the Internet? |
+
+# 6. Cookies
+
+Example HTTP request: 
+<img width="1232" height="1288" alt="image" src="https://github.com/user-attachments/assets/89825bff-b894-4254-977b-d0b3442c57a9" />  
+
+Cookies can be used for many purposes, but they are most often used for authentication on websites. The value of a cookie is usually not a plain text string where the password can be seen, but rather $\color{red}{\textsf{a token (a unique secret code that is difficult for a person to guess).}}$
