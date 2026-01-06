@@ -94,7 +94,7 @@ To breakdown each line of the response:
 
 **Lines 7-14:** The information that has been requested, in this instance the homepage.
 
-# 2. HTTP Methods  
+# 3. HTTP Methods  
 
 HTTP methods are the way a client can specify the desired action when sending an HTTP request. Only the GET and POST methods are commonly used.
 
@@ -107,7 +107,7 @@ HTTP methods are the way a client can specify the desired action when sending an
 **DELETE request** - This function is used to delete information/records from a web server. $\color{red}{\textsf{(to delete info from web-server)}}$
 
 
-# 3. HTTP Status Codes:  
+# 4. HTTP Status Codes:  
 
 | Code | Description|
 | :--- | :--- |
@@ -134,3 +134,23 @@ HTTP methods are the way a client can specify the desired action when sending an
 | 503 - Service Unavailable | This server cannot process your request because it is either overloaded or offline for maintenance. |
 
 https://http.cat/ $\color{red}{\textsf{a resource for learning about status codes}}$
+
+# 5.  Headers  
+## Common Request Headers
+These are headers that are sent from the client (usually your browser) to the server.
+
+| Header | Description |
+| :--- | :--- | 
+| **Host** | Some web servers host multiple websites, so by specifying the "Host" header, you can indicate which one you need; otherwise, you will get the default website for that server. |  
+| User-Agent | This is the version number and description of your browser, which tells the web server that your browser correctly formats the website for your browser, and also that certain HTML, JavaScript, and CSS elements are only available in specific browsers. |
+| Content-Length | When sending data to a web server, for example, via a form, the Content-Length parameter tells the web server how much data to expect in the web request. This way, the server can ensure that no data is missed. |
+| Accept-Encoding | This indicates to the web server which compression methods the browser supports, so that the data can be compressed for transmission over the internet. |
+| Cookie | Data is sent to the server to store your information (see the "Cookies" section for more details). | 
+
+## General response headers
+| Header | Description |
+| :--- | :--- |
+| Set-Cookie | Information for storage that is sent back to the web server with each request. |
+| Cache-Control | How long will the response content be stored in the browser's cache before it requests it again? |
+| Content-Type | This parameter tells the client what type of data is being returned, such as HTML, CSS, JavaScript, image, PDF, video, etc. Using the Content-Type header, the browser knows how to process the data. | 
+| Content-Encoding | What method was used to compress the data in order to reduce its size when transmitting it over the Internet? |
