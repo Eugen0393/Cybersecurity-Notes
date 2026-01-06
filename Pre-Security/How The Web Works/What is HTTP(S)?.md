@@ -105,3 +105,32 @@ HTTP methods are the way a client can specify the desired action when sending an
 **PUT request** - This is used to send data to a web server to update information. $\color{red}{\textsf{(to update info on web-server)}}$
 
 **DELETE request** - This function is used to delete information/records from a web server. $\color{red}{\textsf{(to delete info from web-server)}}$
+
+
+# 3. HTTP Status Codes:  
+
+| Code | Description|
+| :--- | :--- |
+| 100-199 - Informational Response | These codes are sent to the client to inform them that the first part of their request has been accepted, and they should continue sending the remaining part of the request. |
+| 200-299 - Success | This range of status codes is used to inform the client that their request was successfully completed. |
+| 300-399 - Redirection | These codes are used to redirect the client's request to another resource. This could be either a different web page or a completely different website. |
+| 400-499 - Client Errors | Used to inform the client about an error that occurred in their request. |
+| 500-599 - Server Errors | This code is for errors that occur on the server side and usually indicates a fairly serious problem with the server processing the request. |  
+
+## Typical HTTP status codes:
+
+| Code | Description |
+| :--- | :--- |
+| 200 - OK | The request was successfully completed. |
+| 201 - Created | A resource has been created (for example a new user or new blog post). |
+| 301 - Moved Permanently | This redirects the client's browser to a new web page or informs search engines that the page has been moved to a different location and should be searched for there. |
+| 302 - Found | Similar to the permanent redirect described above, but, as the name suggests, this is only a temporary change, and it may be reversed in the near future. |
+| 400 - Bad Request | This informs the browser that something was wrong with the request or that something was missing.  Sometimes this can be used if the web server being accessed expects a specific parameter that the client did not send. |
+| 401 - Not Authorised | Currently, accessing this resource is not possible without logging in to the web applications, most often using a username and password. |
+| 403 - Forbidden | You do not have permission to view this resource, regardless of whether you are logged in or not. |
+| 405 - Method Not Allowed | The resource does not support this request method; for example, you are sending a GET request to the /create-account resource when a POST request was expected. |
+| 404 - Page Not Found | The page/resource you requested does not exist. |
+| 500 - Internal Service Error | The server encountered an error while processing your request, and it doesn't know how to handle it correctly. |
+| 503 - Service Unavailable | This server cannot process your request because it is either overloaded or offline for maintenance. |
+
+https://http.cat/ $\color{red}{\textsf{a resource for learning about status codes}}$
