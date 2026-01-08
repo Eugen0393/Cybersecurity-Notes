@@ -135,6 +135,14 @@ HTTP methods are the way a client can specify the desired action when sending an
 
 https://http.cat/ $\color{red}{\textsf{a resource for learning about status codes}}$
 
+2xx (200-299): ✅ Success (Everything is working).
+
+3xx (300-399): ➡️ Redirection (Go to another location).
+
+4xx (400-499): ❌ Your fault (You entered the wrong address or you don't have the necessary permissions).
+
+5xx (500-599): 🔥 Server fault (They messed up, the site is down).
+
 # 5.  Headers  
 ## Common Request Headers
 These are headers that are sent from the client (usually your browser) to the server.
