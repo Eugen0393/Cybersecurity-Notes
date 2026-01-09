@@ -29,3 +29,12 @@ Tags can contain attributes, such as the `class` attribute, which is used to sty
 ```  
 # 3. JavaScript
 JavaScript (JS) is one of the most popular programming languages ​​in the world, allowing you to create interactive web pages. HTML is used to create the structure and content of a website, while JavaScript is used to control the functionality of web pages.
+
+# 4. Sensitive Data Exposure
+
+`A confidential data leak occurs when a website fails to properly protect (or remove) sensitive information that is publicly accessible to the end user; this information is usually found in the website's source code. ` 
+
+We now know that websites are built using many HTML elements (tags) that can be seen simply by "viewing the page source code." The website developer may have forgotten to remove login credentials, hidden links to private sections of the website, or other sensitive data displayed in HTML or JavaScript.
+
+# 5. HTML Injection  
+HTML Injection is a vulnerability that occurs when unfiltered user input is displayed on the page. If a website fails to sanitise user input (filter any "malicious" text that a user inputs into a website), and that input is used on the page, an attacker can inject HTML code into a vulnerable website.
