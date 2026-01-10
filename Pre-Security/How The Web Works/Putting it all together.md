@@ -22,3 +22,19 @@ Websites often need a way to store information for their users. Web servers can 
 ## WAF (**W**eb **A**ppliccation **F**irewall)  
 **A WAF (Web Application Firewall) sits between your web request and the web server; its main task is to protect the web server from hacking or denial-of-service attacks.** It analyses the web requests for common attack techniques, whether the request is from a real browser rather than a bot. It also checks if an excessive amount of web requests are being sent by utilising something called rate limiting, which will only allow a certain amount of requests from an IP per second. If a request is deemed a potential attack, it will be dropped and never sent to the webserver.  
 <img width="612" height="177" alt="image" src="https://github.com/user-attachments/assets/4b488e68-d135-4226-b2a4-f4237a0aacaa" />
+
+
+# 3. How Web servers work.  
+
+## What is Web Server?
+
+A web server is software that accepts incoming connections and uses the HTTP protocol to deliver web content to its clients. The most common web servers are $\color{red}{\textsf{Apache, Nginx, IIS, and NodeJS}}$. The web server delivers files from a root directory, which is defined in the software settings. For example, Nginx and Apache use the same default location – `/var/www/html` in Linux operating systems, while IIS uses `C:\inetpub\wwwroot` for Windows operating systems.
+
+Example:
+If you request the file http://www.example.com/picture.png, it will send the file `/var/www/html/picture.jpg` from its local hard drive.
+
+## Virtual Hosts
+
+Web servers can host multiple websites with different domain names; they use virtual hosts for this purpose. The web server software checks the hostname requested from the HTTP headers and matches it against its virtual hosts $\color{red}{\textsf{(virtual hosts are simply text configuration files)}}$. If a match is found, the correct website will be served. If no match is found, the default website will be served.
+
+Virtual hosts can map their root directory to different locations on the hard drive. For example, $\color{red}{\textsf{one.com}}$ can be mapped to `/var/www/website_one`, and $\color{red}{\textsf{two.com}}$ to `/var/www/website_two`.
