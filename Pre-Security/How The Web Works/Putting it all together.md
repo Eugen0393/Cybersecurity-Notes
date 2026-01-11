@@ -38,3 +38,12 @@ If you request the file http://www.example.com/picture.png, it will send the fil
 Web servers can host multiple websites with different domain names; they use virtual hosts for this purpose. The web server software checks the hostname requested from the HTTP headers and matches it against its virtual hosts $\color{red}{\textsf{(virtual hosts are simply text configuration files)}}$. If a match is found, the correct website will be served. If no match is found, the default website will be served.
 
 Virtual hosts can map their root directory to different locations on the hard drive. For example, $\color{red}{\textsf{one.com}}$ can be mapped to `/var/www/website_one`, and $\color{red}{\textsf{two.com}}$ to `/var/www/website_two`.
+
+
+## Static and Dynamic Content
+
+* Static content is content that never changes. Common examples include images, JavaScript, CSS, etc., but it can also include HTML code that never changes. Moreover, these are files that are directly served from the web server without any modifications.
+
+* Dynamic content, on the other hand, is content that can change depending on various requests. Take a blog, for example. The blog's homepage displays the latest posts. If a new post is created, the homepage is updated to include that latest post. Or, for example, a blog's search page. Depending on the search query, different results will be displayed.
+
+* These changes, which affect what you ultimately see, happen on the so-called **backend** using programming languages ​​and scripting. It's called the **backend** because all the actions are performed behind the scenes. You cannot view the website's source HTML code and see what's happening on the backend, while the HTML is the result of processing on the backend. Everything you see in the browser is called the frontend.
