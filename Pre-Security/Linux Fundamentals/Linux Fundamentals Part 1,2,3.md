@@ -11,3 +11,11 @@
 | `find . -name "*.txt"` | Searches for all files with a specific extension (e.g., `.txt`) in the current directory. |
 | `grep "<text>" <file>` | **G**lobal **R**egular **E**xpression **P**rint. Searches for a specific string of text inside a file (e.g., searching for an IP in a log). |
 
+# Linux Basics: Shell Operators
+
+| Operator | Description |
+| :--- | :--- |
+| `&` | Runs the command in the **background**, allowing you to continue using the terminal while it works. |
+| `&&` | Logical **AND**. Allows you to chain commands. The second command runs only if the first one succeeds. |
+| `>` | **Redirects** output to a file, **overwriting** any existing content in that file. |
+| `>>` | **Redirects** output to a file, **appending** it to the end (does not delete existing content). |
