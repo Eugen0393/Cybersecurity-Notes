@@ -33,3 +33,21 @@
 | `rm <file>` | **R**e**m**ove. Permanently deletes a specific file. |
 | `rm -R <folder>` | **R**ecursive remove. Permanently deletes a folder and **all** its contents. |
 | `file <filename>` | Determines the type of a file (e.g., tells you if it's text, an image, or an executable). |
+
+# Linux Basics: User Management
+
+| Command | Action |
+| :--- | :--- |
+| `su <username>` | **S**witch **U**ser. Switches to another user account. If no username is specified, it attempts to switch to **root**. Keeps your current environment variables. |
+| `su -l <username>` | Switches to a user and simulates a full **login**. This loads the new user's environment (PATH, home directory, etc.), just like a fresh login. |
+
+# Linux Basics: Important Directories
+
+| Directory | Description |
+| :--- | :--- |
+| `/etc` | Stores system configuration files. **Key files:** `passwd`, `shadow` (passwords), `sudoers` (admin rights). |
+| `/var` | **Var**iable data. Stores files that change often, such as logs (`/var/log`) and backups. |
+| `/root` | The home directory of the **root** user. Regular users cannot access this folder. |
+| `/tmp` | **T**e**mp**orary files. Files here are deleted when the system reboots. Often writable by everyone. |
+| `/bin` & `/sbin` | Contains binary executables (commands like `ls`, `cp`, `ip`). `/sbin` usually holds system binaries for root. |
+| `/home` | Contains home directories for regular users (e.g., `/home/tryhackme`). |
