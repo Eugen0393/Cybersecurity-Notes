@@ -51,3 +51,12 @@
 | `/tmp` | **T**e**mp**orary files. Files here are deleted when the system reboots. Often writable by everyone. |
 | `/bin` & `/sbin` | Contains binary executables (commands like `ls`, `cp`, `ip`). `/sbin` usually holds system binaries for root. |
 | `/home` | Contains home directories for regular users (e.g., `/home/tryhackme`). |
+
+
+# Linux Basics: File Transfer
+
+| Command | Action |
+| :--- | :--- |
+| `python3 -m http.server` | Starts a simple web server on port 8000 in the current directory. Used to **host** your files so other machines can download them. |
+| `wget <url>` | **W**eb **Get**. Downloads a file from the internet (or from your python server) via HTTP/HTTPS. |
+| `scp <source> <dest>` | **S**ecure **C**o**p**y. Copies files securely between computers using the SSH protocol (e.g., from your PC to a remote server). |
