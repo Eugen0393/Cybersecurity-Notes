@@ -60,3 +60,34 @@
 | `python3 -m http.server` | Starts a simple web server on port 8000 in the current directory. Used to **host** your files so other machines can download them. |
 | `wget <url>` | **W**eb **Get**. Downloads a file from the internet (or from your python server) via HTTP/HTTPS. |
 | `scp <source> <dest>` | **S**ecure **C**o**p**y. Copies files securely between computers using the SSH protocol (e.g., from your PC to a remote server). |
+
+# Linux Basics: Process & Service Management
+
+| Command | Action |
+| :--- | :--- |
+| `ps` | Shows a list of processes running in the **current** terminal session. |
+| `ps aux` | Shows detailed info about **all** processes running on the system (for all users). Useful to find hidden tasks. |
+| `top` | Displays a **real-time** view of active processes (like Task Manager). Shows CPU and RAM usage. |
+| `kill <PID>` | Terminates a process using its **P**rocess **ID**. Uses signals like `SIGTERM` (clean stop) or `SIGKILL` (force stop). |
+| `systemctl <option> <service>` | Manages system services. Options: `start`, `stop`, `enable` (autostart on boot), `disable`. |
+| `fg` | **F**ore**g**round. Brings a background process (job) back to the active terminal. |
+
+# Linux Basics: Automation & Scheduling
+
+| Command | Action |
+| :--- | :--- |
+| `crontab -e` | Opens the **Cron** table for editing. Allows you to schedule scripts or commands to run automatically at specific times (e.g., backups every day at 3 AM). |
+
+> **Pro Tip:** Cron syntax can be confusing (e.g., `* * * * *`). Use sites like **Crontab Guru** or **Crontab Generator** to easily create the correct timing string.
+
+
+# Linux Basics: Package Management
+
+| Command | Action |
+| :--- | :--- |
+| `add-apt-repository <ppa>` | Adds a new software source (PPA) to your system. Useful for installing software not in the default store. |
+| `add-apt-repository --remove <ppa>` | Removes a software source (PPA) from your system. |
+| `apt update` | Refreshes the list of available updates and packages. **Always** run this before installing anything. |
+| `apt install <package>` | Installs a software package from the repository (e.g., `apt install sublime-text`). |
+| `apt remove <package>` | Removes an installed package from your system. |
+| `dpkg` | **D**ebian **P**ac**k**a**g**e. A low-level tool to install `.deb` files manually (similar to `.exe` in Windows). Often used as `dpkg -i file.deb`. |
